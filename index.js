@@ -2,11 +2,19 @@ const express = require("express");
 const axios = require("axios");
 const WebSocket = require("ws");
 const cors = require('cors');
+const path = require('path');
 const app = express();
 app.use(cors());
 const PORT = 3000;
 
 app.use(express.json());
+app.use(express.static(path.join(__dirname, 'public')));
+
+
+
+app.get("/", (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
 
 app.post("/join", async (req, res) => {
     const { username, roomCode } = req.body;
@@ -57,6 +65,7 @@ app.listen(PORT, () => {
     //  \ \/\/ / / / (_ | | _ \ (_) || |  
     //   \_/\_/ /___\___| |___/\___/ |_|
     // MADE BY DXBY
-                                       
+    console.log("W2G BOT MADE BY DXBY\n")
+    console.log("[STARTED] OPEN http://localhost:3000/ in your browser to access the tool.")
     console.log(`[LISTENING] http://localhost:${PORT}`);
 });
