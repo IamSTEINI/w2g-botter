@@ -1,6 +1,7 @@
 # w2g-botter
 
 Bot for joining W2G (Watch2Gether) rooms.
+<br>
 ⚠️ FOR EDUCATIONAL PURPOSES ONLY. I AM NOT RESPONSIBLE FOR ANYTHING.
 
 # Prerequisites
