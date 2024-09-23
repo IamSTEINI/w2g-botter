@@ -1,0 +1,93 @@
+body {
+    background-color: #121212;
+}
+
+* {
+    font-family: "Helvetica";
+    color: #fef;
+    transition: all linear 100ms;
+    overflow-y: scroll;
+}
+*::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+input[type="text"] {
+    margin: 2px;
+    padding: 10px;
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+    border: 1px solid #323232;
+    border-radius: 10px;
+    background-color: transparent;
+}
+input[type="text"]:active,
+input[type="text"]:focus {
+    margin: 2px;
+    padding: 10px;
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+    border: 1px solid #ff00dd;
+    border-radius: 10px;
+    background-color: transparent;
+}
+button {
+    padding: 10px;
+    margin: 10px 2px 2px 2px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    outline: none;
+    border: 1px solid #323232;
+    border-radius: 10px;
+    background-color: transparent;
+}
+button:hover {
+    border: 1px solid #ff00dd;
+}
+button:active {
+    border: 1px solid #ff00dd;
+}
+h2 {
+    font-size: 30px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    border: 1px solid #ff00dd;
+    border-radius: 10px;
+    padding: 15px;
+    width: 70%;
+    max-width: 500px;
+    min-width: 200px;
+}
+span {
+    margin-top: -15px;
+    margin-bottom: 15px;
+    opacity: 0.5;
+}
+
+#joinForm {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#result {
+    max-height: 300px;
+    margin-top: 10px;
+}
