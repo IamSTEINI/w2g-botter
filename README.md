@@ -17,7 +17,7 @@ Follow the installation instructions on the website to install Node.js.
 
 ### 2. Clone the Repository:
 
-`git clone https://github.com/your-username/w2g-botter.git
+`git clone https://github.com/IamSTEINI/w2g-botter.git
 cd w2g-botter
 `
 
